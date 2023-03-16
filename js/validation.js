@@ -3,17 +3,16 @@ var email = document.getElementById('email');
 var telefono = document.getElementById('telefono');
 var error = document.getElementById('error');
 var errorNextPage = [];
-var mensajeError = [];
 var form = document.getElementById('formulario');
-error.style.color="red";
 
 form.addEventListener('submit', function (evt) {
     evt.preventDefault();
+    clearCampos();
+    errorNextPage = [];
     validarCampo('nombre',nombre);
     validarCampo('email',email);
     validarCampo('telefono',telefono);
     redireccionIndex(errorNextPage);
-    error.innerHTML = mensajeError.join(', ');
 });
 
 function clearCampos(){
@@ -28,7 +27,6 @@ function validarCampo (campo,texto){
             if (texto.value===null || texto.value==''){
                 document.getElementById(campo).style.bordercolor = "red";
                 document.getElementById("errorNombre").innerHTML = "Campo Obligatorio";
-                mensajeError.push('Ingresar Nombre');
                 errorNextPage.push('errorNombre');
             }
             break;
@@ -36,7 +34,6 @@ function validarCampo (campo,texto){
             if (texto.value===null || texto.value==''){
                 document.getElementById(campo).style.bordercolor = "red";
                 document.getElementById("errorEmail").innerHTML = "Campo Obligatorio";
-                mensajeError.push('Ingresar Email');
                 errorNextPage.push("errorEmail");
             }
             break;
@@ -44,7 +41,6 @@ function validarCampo (campo,texto){
             if (texto.value===null || texto.value==''){
                 document.getElementById(campo).style.bordercolor = "red";
                 document.getElementById("errorTelefono").innerHTML = "Campo Obligatorio";
-                mensajeError.push('Ingresar Telefono')
                 errorNextPage.push('errorTelefono');
             }
             break;
