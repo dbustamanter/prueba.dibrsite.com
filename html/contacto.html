@@ -42,24 +42,24 @@
 
   <main class="contenedor seccion contenido-centrado">
     <h2 class="fw-300 centrar-texto">Llena el formulario de Contacto<h2>
-        <form class="contacto" action="">
-          <fieldset>
+        <form class="contacto" id="formulario" action="js/validation.json" >
+          <!--<fieldset>-->
             <legend>Información Personal</legend>
-            <label for="nombre">Nombre: </label>
+            <label for="nombre">Nombre: </label><div id="errorNombre"></div>
             <input type="text" id="nombre" placeholder="Tu Nombre">
 
-            <label for="email">E-mail: </label>
-            <input type="email" id="email" placeholder="Tu Correo Electrónico" required>
+            <label for="email">E-mail: </label><div id="errorEmail"></div>
+            <input type="text" id="email" placeholder="Tu Correo Electrónico" >
 
-            <label for="telefono">Teléfono</label>
-            <input type="tel" id="telefono" placeholder="Tu Teléfono" required>
+            <label for="telefono">Teléfono</label><div id="errorTelefono"></div>
+            <input type="text" id="telefono" placeholder="Tu Teléfono" >
 
             <label for="mensaje">Mensaje: </label>
-            <textarea id="mensaje" cols="60" rows="10"></textarea>
+            <textarea id="text" cols="60" rows="10"></textarea>
 
-          </fieldset>
+          <!--</fieldset>-->
 
-          <fieldset>
+          <!--<fieldset>
 
             <legend>Información Sobre Propiedad</legend>
 
@@ -86,10 +86,6 @@
               <label for="correo">E-mail</label>
               <input type="radio" name="contacto" value="correo" id="correo">
             </div>
-            <!--<p>Elija del Menu</p>
-            <input type="checkbox" name="orden" value="hamburguesa">hamburguesa
-            <input type="checkbox" name="orden" value="papas">papas
-            <input type="checkbox" name="orden" value="cerveza">cerveza -->
             <p>Si eligió Teléfono, elija fecha y la hora</p>
             <label for="fecha">Fecha:</label>
             <input type="date" id="fecha">
@@ -97,13 +93,14 @@
             <label for="hora">Hora:</label>
             <input type="time" name="hora" min="09:00" max="18:00">
 
-          </fieldset>
+          </fieldset>-->
 
-          <input type="submit" value="enviar" class="boton boton-verde">
+          <input type="submit" class="boton boton-verde">
 
         </form>
+        <div id="error"></div>
   </main>
-
+  <script src="../js/validation.js"></script>
   <footer class="site-footer seccion">
     <div class="contenedor contenedor-footer">
       <nav class="navegacion">
