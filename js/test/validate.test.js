@@ -6,7 +6,7 @@ describe('Validación de formulario', () => {
 
   let dom;
 
-  before(() => {
+  beforeEach(() => {
     dom = new JSDOM(`<!DOCTYPE html><html><head></head><body>
       <form class="contacto" action="" id="contacto">
       <fieldset>
