@@ -1,0 +1,1 @@
+https://integracionx-ray.atlassian.net/rest/api/3/issue/IXR-218/attachments
