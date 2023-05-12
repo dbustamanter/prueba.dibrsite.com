@@ -64,8 +64,8 @@ pipeline {
         git branch: 'demo', url: 'https://github.com/dbustamanter/prueba.dibrsite.com.git'
         sh "git config --global user.email 'Tsoft@tsoftglobal.com'"
         sh "git config --global user.name 'Tsoft'"
-        sh "git checkout master"
-        sh "git merge --no-ff -m 'Merge de cambios de develop' develop"
+        sh "git checkout demo_master"
+        sh "git merge --no-ff -m 'Merge de cambios de develop' demo"
         script {
           withCredentials([string(credentialsId: 'merge_tokenppl', variable: 'MERGE_TOKENPPL')]){
             sh "git push -f https://${MERGE_TOKENPPL}@github.com/dbustamanter/prueba.dibrsite.com.git demo_master"
