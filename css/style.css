@@ -241,7 +241,7 @@ h4 {
 }
 
 .iconos-caracteristicas li img {
-  margin-right:
+  margin-right: 0
 }
 
 .propiedades-all {
@@ -293,7 +293,7 @@ h4 {
   margin-bottom: 2rem;
 }
 
-.entrada-blog: last-of-type {
+.entrada-blog last-of-type {
   margin-bottom: 0;
 }
 
@@ -311,7 +311,7 @@ h4 {
 }
 
 .texto-entrada h4 {
-  margin 0;
+  margin: 0;
   line-height: 1.4;
 }
 
