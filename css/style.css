@@ -190,7 +190,7 @@ h4 {
   flex-wrap: wrap;
 }
 
-.anuncio {
+.anuncio-a {
   flex: 0 0 calc(33.3% - 1rem);
   /**flex-shrink: 0;
   flex-basis: calc(33.3% - 1rem);
