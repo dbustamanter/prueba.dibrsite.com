@@ -33,12 +33,14 @@ h1 {
   font-size: 3.5rem;
   font-weight: bold;
   color: blue;
+  background-color: #4CAF50;
 }
 
 h2 {
   font-size: 2.1rem;
   font-weight: lighter;
   color: green;
+  background-color: blue;
 }
 
 h3 {
