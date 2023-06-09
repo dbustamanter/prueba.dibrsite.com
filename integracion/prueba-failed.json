@@ -61,7 +61,7 @@
 			"keyword": "When "
 		}],
 		"tags": [{
-			"name": "@TEST_IXR-143"
+			"name": "@TEST_PX-3"
 		}]
 	}],
 	"name": "Flujo  Delivery Android",
@@ -71,4 +71,3 @@
 	"uri": "file:src/test/resources/features/android/DeliveryAndroid.feature",
 	"tags": []
 }]
-
