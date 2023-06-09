@@ -1,8 +1,8 @@
 {
   "fields": {
     "project": {
-      "id": "10000",
-      "key": "IXR"
+      "id": "10001",
+      "key": "PX"
     },
     "summary": "Ejecución Demo Healenium",
     "issuetype": {
@@ -10,6 +10,6 @@
     }
   },
   "xrayFields": {
-    "testPlanKey": "IXR-94"
+    "testPlanKey": "PX-1"
   }
 }
